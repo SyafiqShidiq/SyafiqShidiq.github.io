@@ -150,6 +150,58 @@ nav ul li a:hover{
     text-decoration: underline;
     text-decoration-color: #CCC8AA;
 }
+.wrapper .slide .image{
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+.wrapper .slide .image img{
+    width: 100%;
+    
+}
+.wrapper{
+    width: 700px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper .nav a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #b6b6b6;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 0.5s;
+}
+.wrapper .nav a:hover{
+    background-color: #666;
+}
+.wrapper .nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+#slide-1:target ~ .image {
+    margin-left: 0px;
+}
+#slide-2:target ~ .image {
+    margin-left: -100%;
+}
+#slide-3:target ~ .image {
+    margin-left: -200%;
+}
+#slide-4:target ~ .image {
+    margin-left: -300%;
+}
+#slide-5:target ~ .image {
+    margin-left: -400%;
+}
 .project .work .g-1 .overlay {
     position: absolute;
     top: 0;
